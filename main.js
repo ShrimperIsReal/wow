@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const pageNumber = document.querySelector(".page-number");
     const container = document.querySelector(".contain");
 
-    // Page 1 HTML
     const page1Content = `
     <div class="left-side">
         <div class="box-of-doom">
@@ -49,7 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
     `;
 
-    // Page 2 HTML
     const page2Content = `
     <div class="left-side2">
         <div class="box-of-doom">
@@ -87,7 +85,6 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
     `;
 
-    // Stop all audio
     function stopAllMusic() {
         document.querySelectorAll("audio").forEach(audio => {
             audio.pause();
@@ -95,7 +92,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Attach hover music to left/right sides
     function attachHoverMusic() {
         const leftSide = container.querySelector(".left-side, .left-side2");
         const rightSide = container.querySelector(".right-side");
@@ -131,7 +127,6 @@ document.addEventListener("DOMContentLoaded", () => {
         attachIconHover(hoverSound);
     }
 
-    // Hover sounds for icons
     function attachIconHover(hoverSound) {
         if (!hoverSound) return;
         container.querySelectorAll(".icon, .icon2").forEach(icon => {
@@ -143,7 +138,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Initialize a page
     function initPage(content, pageNum) {
         stopAllMusic();
         container.innerHTML = content;
@@ -151,7 +145,6 @@ document.addEventListener("DOMContentLoaded", () => {
         attachHoverMusic();
     }
 
-    // Preload audio
     function preloadAudio() {
         document.querySelectorAll("audio").forEach(audio => {
             audio.volume = 0.4;
@@ -164,7 +157,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Overlay click to start
     if (overlay) {
         overlay.addEventListener("click", () => {
             overlay.style.display = "none";
@@ -172,12 +164,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Initial page
     initPage(page1Content, "Page 1");
     leftArrow.disabled = true;
     rightArrow.disabled = false;
 
-    // Navigation
     rightArrow.addEventListener("click", () => {
         initPage(page2Content, "Page 2");
         leftArrow.disabled = false;
@@ -190,3 +180,4 @@ document.addEventListener("DOMContentLoaded", () => {
         rightArrow.disabled = false;
     });
 });
+
