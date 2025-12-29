@@ -1,0 +1,260 @@
+body {
+    background-color: black;
+    margin: 0;
+    position: relative;
+    justify-content: space-evenly;
+    font-family: 'Comic Sans MS', 'Comic Sans'
+}
+
+.left-side {
+    background-image: url('/images/shrimper-background_old.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 50%;
+    outline: 2px solid white;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: url("/assets/ShrimperCursor.cur"), auto;
+}
+
+.right-side {
+    background-image: url("/images/seikoso-background.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 50%;
+    outline: 2px solid white;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: url('/assets/SeikosoCursor.cur'), auto;
+}
+
+.cursorthing {
+    cursor: url('/assets/wii-open.cur'), auto;
+}
+
+.cursorthing2 {
+    cursor: url('/assets/ShrimperCursor.cur'), auto;
+}
+
+.contain {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+}
+
+.box-of-doom {
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px rgba(255, 255, 255, 0.25) solid;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+@font-face {
+    font-family: 'Christmas Frost';
+    src: url('/assets/Christmas Frost.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.second-layer-of-the-box {
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: -3rem;
+    font-family: 'comic sans ms', 'comic sans', cursive;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.shrimp {
+    font-family: 'Christmas Frost', 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px #000000;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.sexkoso {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.social-buttons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    filter: drop-shadow(2px 2px 4px #000);
+}
+
+.icon {
+    font-size: 2rem;
+    color: white;
+    transition: transform 0.3s, filter 0.3s;
+    text-decoration: none;
+}
+
+.icon:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: azure;
+    transform: scale(1.1);
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px azure);
+    cursor: url("/assets/wii-open.cur"), auto;
+}
+
+.icon2 {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    filter: drop-shadow(2px 2px 4px #000);
+}
+
+.icon2 {
+    font-size: 2rem;
+    color: white;
+    transition: transform 0.3s, filter 0.3s;
+    text-decoration: none;
+}
+
+.icon2:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: azure;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px azure);
+    cursor: url("/assets/ShrimperCursor.cur"), auto;
+}
+
+img {
+    width: 4rem;
+    margin-right: 10px;
+    border-radius: 100%;
+    box-shadow: white 0px 0px 10px;
+    border: white 2px solid;
+}
+
+.left-side2 {
+    background-image: url('/assets/maxime-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 50%;
+    outline: 2px solid white;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: url("/assets/ShrimperCursor.cur"), auto;
+}
+
+
+.page-nav {
+    position: absolute;
+    bottom: 2rem; /* a little above the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    color: white;
+}
+
+.page-nav button, .page-nav a {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 2px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.page-nav button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+
+.page-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* ensure it’s above everything else */
+    cursor: pointer;
+}
+
+#overlay-text {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 01);
+    color: rgb(255, 255, 255);
+    background: none;
+    text-align: center;
+    padding: 1rem 2rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-text {
+    position: fixed;       /* fixes it to the viewport */
+    bottom: 0.5rem;        /* small gap from bottom */
+    left: 0.5rem;          /* small gap from left */
+    color: white;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 0.9rem;
+    z-index: 10000;        /* make sure it stays on top of page content */
+    text-shadow: 1px 1px 3px black;
+    pointer-events: none;  /* so it doesn’t block clicks */
+}
