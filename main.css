@@ -186,7 +186,7 @@ img {
 
 .page-nav {
     position: absolute;
-    bottom: 2rem; /* a little above the bottom */
+    bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -232,7 +232,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 9999; /* ensure it’s above everything else */
+    z-index: 9999;
     cursor: pointer;
 }
 
@@ -248,13 +248,14 @@ img {
 }
 
 .footer-text {
-    position: fixed;       /* fixes it to the viewport */
-    bottom: 0.5rem;        /* small gap from bottom */
-    left: 0.5rem;          /* small gap from left */
+    position: fixed;
+    bottom: 0.5rem;
+    left: 0.5rem;
     color: white;
     font-family: 'Comic Sans MS', 'Comic Sans', cursive;
     font-size: 0.9rem;
-    z-index: 10000;        /* make sure it stays on top of page content */
+    z-index: 10000;
     text-shadow: 1px 1px 3px black;
-    pointer-events: none;  /* so it doesn’t block clicks */
+    pointer-events: none;
 }
+
