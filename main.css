@@ -259,3 +259,54 @@ img {
     pointer-events: none;
 }
 
+
+@media (max-width: 768px) {
+
+    .contain {
+        flex-direction: column;
+    }
+
+    .left-side,
+    .right-side,
+    .left-side2 {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .box-of-doom {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .second-layer-of-the-box {
+        margin-top: -1.5rem;
+        font-size: 16px;
+    }
+
+    .shrimp,
+    .sexkoso {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .social-buttons {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    img {
+        width: 3rem;
+    }
+
+    .page-nav {
+        bottom: 1rem;
+        gap: 0.5rem;
+    }
+
+    .page-nav button,
+    .page-nav a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.75rem;
+    }
+}
