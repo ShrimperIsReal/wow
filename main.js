@@ -88,7 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function stopAllMusic() {
         document.querySelectorAll("audio").forEach(audio => {
             audio.pause();
-            audio.currentTime = 0;
         });
     }
 
@@ -180,4 +179,5 @@ document.addEventListener("DOMContentLoaded", () => {
         rightArrow.disabled = false;
     });
 });
+
 
